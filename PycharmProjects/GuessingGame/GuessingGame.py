@@ -3,11 +3,12 @@ import random
 
 print("Welcome to the guessing Game.")
 print("generating random number...")
-lives = 3
+lives = 10
 #generate random number between 1-99
 gameNumber= random.randint(1,100)
 flag = 0
 isRunning = True
+#print(gameNumber)
 while(isRunning):
     if(lives == 1):
         isRunning = False
@@ -23,6 +24,7 @@ while(isRunning):
 
 if flag == 1:
     print("You ran out of Lives! you lost...")
+    print("the number was " +  str(gameNumber))
 else:
     print("Congrats you won!")
 
