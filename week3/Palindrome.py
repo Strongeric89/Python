@@ -12,6 +12,9 @@ while isRunning:
         coma = '\''
         hiphan = ','
         quotes = '/"'
+        exclam = '!'
+        question = '?'
+        dot = '.'
 
         #convert to lowercase
         userWord = userWord.lower()
@@ -24,7 +27,7 @@ while isRunning:
         newWord =''
         for ch in userWord:
             #get rid of spaces
-            if ch == space or ch ==coma or ch ==hiphan or ch ==quotes:
+            if ch == space or ch ==coma or ch ==hiphan or ch ==quotes or ch ==question or ch ==exclam or ch ==dot:
                 continue
             else:
                 noSpaceWord += ch
