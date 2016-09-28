@@ -16,15 +16,27 @@ print("The Binary Number of " + str(number) +  " is " +  binString)
 
 #part 2convert a binary sequency back to a decimal
 binNumber = int(binString,2)
-
-
-
 print("\n\nThe binary Number " + str(binString))
 print("The Decimal version of is " + str(binNumber))
 
-base = raw_input("Please enter a base to convert to: ")
-newNumber = int(binString,int(base))
-print(newNumber)
+
+#HEX CONVERSION
+#array of numbers to show the index of the new number
+numbers = [1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
+#algorithm to get the hex version
+
+string = ''
+
+while number > 0:
+    r = int(number % 16)
+    number = number // 16
+    if r > 9:
+        string = str(numbers[r-1])+ string
+    else:
+        string = str(r) + string
+
+print("\n\nHex version: 0x"+ string)
+
 
 
 
