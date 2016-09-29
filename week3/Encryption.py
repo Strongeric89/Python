@@ -31,7 +31,8 @@ if option == 1:
     # just prints a line to divide up the output
     print("-" * 100)
     print("PlainText:\t" + word)
-    print("CyperText:\t" + cypherText)
+    revWord = cypherText[::-1]
+    print("CyperText:\t" + revWord)
 
 elif option ==2:
     word = raw_input("Enter a word: ")
@@ -40,8 +41,9 @@ elif option ==2:
 
     # just prints a line to divide up the output
     print("-" * 100)
-    print("PlainText:\t" + word)
-    print("CyperText:\t" + plainText)
+    print("CyperText:\t" + word)
+    revWord = plainText[::-1]
+    print("PlainText:\t" + revWord)
 
 else:
     print("not a valid option.")
