@@ -76,3 +76,4 @@ allJumbledUp = getWord(text)
 print("jumbling up text.......................\n")
 for i in allJumbledUp:
     print(i)
+
