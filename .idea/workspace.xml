@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64255e3b-3801-47b1-926a-3b2689e4478b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/week5/MathFunctions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/week5/addEmail.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/week5/students.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -537,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476197205950</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="week5 -math functions program">
+      <created>1476436117468</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1476436117468</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -606,7 +610,8 @@
     <MESSAGE value="week4: file IO with functions. Jumbling algorithm lab 3" />
     <MESSAGE value="week4-lab3-music notation and jumble problems" />
     <MESSAGE value="week5 - tutorial programs, fibonnaci and bubble sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="week5 - tutorial programs, fibonnaci and bubble sort" />
+    <MESSAGE value="week5 -math functions program" />
+    <option name="LAST_COMMIT_MESSAGE" value="week5 -math functions program" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
