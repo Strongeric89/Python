@@ -8,6 +8,26 @@ def checkLen(shopItems):
     else:
         return True
 
+def expensive(shopItems):
+    largest = 0.00
+    winner = ""
+
+    check = checkLen(shopItems)
+    if check == True:
+        for key,value in shopItems.items():
+            if value > largest :
+                largest = value
+                winner = key
+
+        print("The Largest Item in the Basket is {} {}{:.2f}".format(winner,euro,largest))
+        #pair = (largest,winner)
+        #return pair
+
+
+    else:
+        print("")
+        return 0.00
+
 
 #check price function
 def checkPrice(shopItems):
@@ -68,10 +88,13 @@ def delItem(shopItems,total):
         for key,value in shopItems.items():
             if item == key :
                 shopItems.pop(item)
-                total = total - value
-                print("{} was removed from the list".format(item))
-                return total
-                break
+                if(total == 0.00):
+                    break
+                else:
+                    total = total - value
+                    print("{} was removed from the list".format(item))
+                    return total
+                    break
         else:
             print("The item %s is not in the shop list" %item)
     else:
@@ -89,8 +112,10 @@ def displayAll(shopItems):
 
         for key,value in shopItems.items():
             print("{} {:.2f} | \t {}".format(euro,value,key))
+
     else:
         print(" ")
+
 
 
 #main
@@ -110,7 +135,7 @@ while(isRunning):
         #print("\n" * 3)
         print("*" * 30)
         try:
-            option = int(raw_input("Please select an option:\n[1]Add item to Shop\n[2]Remove Item from Shop\n[3]Check Price on Item\n[4]Get Display all products\n[5]Display Total\n\nUSER: "))
+            option = int(raw_input("Please select an option:\n[1]Add item to Shop\n[2]Remove Item from Shop\n[3]Check Price on Item\n[4]Get Display all products\n[5]Display Total\n[6]Most Expensive Item in the Basket\n\nUSER: "))
             print("\n"*5)
             break
         except ValueError:
@@ -129,11 +154,19 @@ while(isRunning):
     elif (option == 4):
         print("Display all products>>")
         displayAll(shopItems)
+        if(total > 0.00):
+            print("-"*30)
+            print("{} {:.2f} | \tSUBTOTAL".format(euro, total))
+
     elif(option == 0):
         print("exiting>>")
         print("Thank you for using the Shopping List app. Goodbye")
         isRunning = False
     elif(option ==5):
         print("Your total Basket is {}{:.2f}".format(euro,total))
+    elif (option == 6):
+
+        expensive(shopItems)
+
     else:
         print("not a valid option. Try again!")
