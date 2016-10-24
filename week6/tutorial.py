@@ -165,8 +165,6 @@ while(isRunning):
     elif(option ==5):
         print("Your total Basket is {}{:.2f}".format(euro,total))
     elif (option == 6):
-
         expensive(shopItems)
-
     else:
         print("not a valid option. Try again!")
