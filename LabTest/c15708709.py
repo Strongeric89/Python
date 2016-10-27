@@ -7,7 +7,6 @@ Version: Python 2.7.11
 Platform: Windows 10, PyCharm Community Edition 2016.2.3
 NOTE: due to my version of python I can only use raw_input() instead of input() to read in from std input
 """
-
 #function to add a book
 def addBook():
 
@@ -22,10 +21,11 @@ def addBook():
         else:
             print("The isbn must contain 13 digits. eg 1234567890000")
 
-
     isbn = int(isbn)
     title = raw_input("Please enter the title of the book: ")
+    title = title.lower()
     author = raw_input("Please enter the Author of the Book:")
+    author = author.lower()
 
     #error checking to stop a letter being entered
     while(isRunning):
@@ -36,37 +36,43 @@ def addBook():
             print("Please enter a digit.")
             isRunning = True
 
-    newBook = [title,author,quantity]
 
-    # for key, value in existingBooks.items():
-    #     if (isbn == value[2]):
-    #         #increase the number of books
-    #         value[2] += 1
+    for key, value in existingBooks.items():
+        if(isbn == key):
+            #change quantity
+            quantity = value[2] + quantity
 
-
+    newBook = [title, author, quantity]
     #implementing the structure
     existingBooks.update({isbn:newBook})
 
-
-
 def displayAll():
-    print("ISBN\t\t\tTITLE\t\tAuthor\t\tQuantity")
-    print("*"*50)
+    si=" ISBN:"
+    ti="TITLE:"
+    au="AUTHOR:"
+    qu="QUANTITY:"
+    print("{:15}\t|{:20}\t|{:20}\t|{}".format(si,ti,au,qu))
+    print("-"*73)
     # print all of the books
     for key, value in existingBooks.items():
-        print("{}\t{}\t{}\t\t{}".format(key, value[0],value[1],value[2]))
+        print("{:15}\t|{:20}\t|{:20}\t|{}".format(key, value[0],value[1],value[2]))
 
 def checkBook():
     #checking out a book will effect the quantity
     book = raw_input("what book do you want to check out? ")
+    book = book.lower()
+    number = 0
 
     for key, value in existingBooks.items():
         if(book == value[0]):
             print("checking out %s" %(value[0]))
             #change quantity
             value[2] -= 1
-        else:
-            print("%s is not available at this moment" % book)
+            number = 1
+
+    if (number == 0):
+        print("%s is not available at this moment" % book)
+
 
 def search():
     #search for a book by title and return ISBN
@@ -84,22 +90,19 @@ def search():
 
 def merge():
     #function to merge the libraries
-    print("Merging Libraries")
-    listToMerge = {1234567890001: ["the book1", "mr.blog", 1], 1234567890007: ["the book7", "John.blog", 4],
+    print("Merging Libraries...")
+    listToMerge = {1234567890001: ["the book1", "mr.blog", 1], 1234567890007: ["the book7", "john.blog", 4],
                      1234567890009: ["the book9", "dr.Python", 4]}
 
-    existingBooks.update(listToMerge)
-    for key, value in existingBooks.items():
 
+    for key,value in existingBooks.items():
        for key2,value2 in listToMerge.items():
             if (key == key2):
+                quantity = value[2]
                 # change quantity
-                value[2] = value[2] + value2[2]
-                existingBooks.update(listToMerge)
-
-
-
-
+                value[2] = value2[2] + quantity
+                listToMerge.update({key:value})
+       existingBooks.update(listToMerge)
 
 #main
 print("Welcome to the Library Book System.")
@@ -113,7 +116,6 @@ while(isRunning):
     while(isRunning2):
         try:
             option = int(raw_input("\n[1]Display Books\n[2]Add a book\n[3]Check out a book\n[4]Search for a Book\n[5]Merge Libraries\n USER: "))
-
             break
         except ValueError:
             print("not a valid type. again")
@@ -135,6 +137,5 @@ while(isRunning):
     elif (option == 5):
         #call merge Libraries
         merge()
-
     else:
         print("not a valid option try again")
