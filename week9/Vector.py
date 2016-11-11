@@ -63,60 +63,47 @@ def getVector():
     id = int(raw_input("Please enter ID for Vector: "))
     x = int(raw_input("Please enter value for X: "))
     y = int(raw_input("Please enter value for Y: "))
-    vector = (id,x,y)
+
+    vector = Vector(id,x,y)
     return vector
 
 #main
-
+vectorList = []
 while(True):
-    option=int(raw_input("[1]Add two vectors\n[2]Subtract two Vectors\n[3]Multiply Two Vectors\n[4]Magnitude\n[5]Quit\nUSER:"))
+    option=int(raw_input("[1]Add two vectors\n[2]Subtract two Vectors\n[3]Multiply Two Vectors\n[4]Magnitude\n[5]Quit\n[6]Print all Vectors\nUSER:"))
 
     if (option == 1):
         print("You selected Add two Vectors")
         # create two vector
-        vec1 = getVector()
-        id, x, y = vec1
-        v1 = Vector(id, x, y)
-
-        vec2 = getVector()
-        id2, x2, y2 = vec2
-        v2 = Vector(id2, x2, y2)
+        v1 = getVector()
+        vectorList.append(v1)
+        v2 = getVector()
+        vectorList.append(v2)
 
         v3 = v1.__add__(v2)
+        vectorList.append(v3)
         print(v3)
 
     elif(option ==2):
         print("You selected Subtract two Vectors")
         # getting co-ordinates
-        # create two vector
-        vec1 = getVector()
-        id, x, y = vec1
-        v1 = Vector(id, x, y)
-
-        vec2 = getVector()
-        id2, x2, y2 = vec2
-        v2 = Vector(id2, x2, y2)
-
+        v1 = getVector()
+        vectorList.append(v1)
+        v2 = getVector()
+        vectorList.append(v2)
         v3 = v1.__sub__(v2)
+        vectorList.append(v3)
         print(v3)
-
-
-
 
     elif(option ==3):
         print("You selected Multiply two Vectors")
         # create two vector objects
-        # getting co-ordinates
-        # create two vector
-        vec1 = getVector()
-        id, x, y = vec1
-        v1 = Vector(id, x, y)
-
-        vec2 = getVector()
-        id2, x2, y2 = vec2
-        v2 = Vector(id2, x2, y2)
-
+        v1 = getVector()
+        vectorList.append(v1)
+        v2 = getVector()
+        vectorList.append(v2)
         v3 = v1.__mult__(v2)
+        vectorList.append(v3)
         print(v3)
 
     elif(option ==5):
@@ -126,15 +113,17 @@ while(True):
     elif (option == 4):
         print("You selected Magnitude of a Vector")
         # create two vector objects
-        # getting co-ordinates
-        # create two vector
-        vec1 = getVector()
-        id, x, y = vec1
-        v1 = Vector(id, x, y)
-
-
+        v1 = getVector()
+        vectorList.append(v1)
         v3 = v1.__mag__(v1)
+        vectorList.append(v3)
         print(v3)
+
+    elif (option == 6):
+        #print all items in the list
+        print("print all vectors.........")
+        for vector in vectorList:
+            print("Vector ID:{} X:{} Y:{}".format(vector.id,vector.x,vector.y))
 
 
     else:
