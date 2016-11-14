@@ -17,6 +17,7 @@ class Vector(object):
         self.id=id
 
 
+
     #str representation of the vector
     def __str__(self):
         return "vector {}: ({},{})".format(self.id,self.x,self.y)
@@ -39,12 +40,10 @@ class Vector(object):
         return v3
 
 
-    def __mult__(self, v2):
+    def __mul__(self, v2):
         #this needs to be fixed
         x1 = self.x * v2.x + self.x * v2.y
         y1 = self.y * v2.y + self.y * v2.x
-
-
 
         # constructing new vector
         v3 = Vector(3, x1, y1)
@@ -65,6 +64,8 @@ def getVector():
     y = int(raw_input("Please enter value for Y: "))
 
     vector = Vector(id,x,y)
+    vectorList.append(vector)
+
     return vector
 
 #main
@@ -76,11 +77,11 @@ while(True):
         print("You selected Add two Vectors")
         # create two vector
         v1 = getVector()
-        vectorList.append(v1)
-        v2 = getVector()
-        vectorList.append(v2)
 
-        v3 = v1.__add__(v2)
+        v2 = getVector()
+
+        #v3 = v1.__add__(v2)
+        v3 = v1 + v2
         vectorList.append(v3)
         print(v3)
 
@@ -88,10 +89,11 @@ while(True):
         print("You selected Subtract two Vectors")
         # getting co-ordinates
         v1 = getVector()
-        vectorList.append(v1)
+
         v2 = getVector()
-        vectorList.append(v2)
-        v3 = v1.__sub__(v2)
+
+        #v3 = v1.__sub__(v2)
+        v3 = v1 - v2
         vectorList.append(v3)
         print(v3)
 
@@ -99,10 +101,11 @@ while(True):
         print("You selected Multiply two Vectors")
         # create two vector objects
         v1 = getVector()
-        vectorList.append(v1)
+
         v2 = getVector()
-        vectorList.append(v2)
-        v3 = v1.__mult__(v2)
+
+        #v3 = v1.__mult__(v2)
+        v3= v1 * v2
         vectorList.append(v3)
         print(v3)
 
@@ -114,8 +117,9 @@ while(True):
         print("You selected Magnitude of a Vector")
         # create two vector objects
         v1 = getVector()
-        vectorList.append(v1)
+
         v3 = v1.__mag__(v1)
+        #v3 = v1 ** v1
         vectorList.append(v3)
         print(v3)
 
@@ -123,7 +127,7 @@ while(True):
         #print all items in the list
         print("print all vectors.........")
         for vector in vectorList:
-            print("Vector ID:{} X:{} Y:{}".format(vector.id,vector.x,vector.y))
+            print("Vector ID:{} X:{} Y:{}\t type:{}".format(vector.id,vector.x,vector.y,type(vector)))
 
 
     else:
