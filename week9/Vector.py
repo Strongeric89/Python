@@ -127,7 +127,10 @@ while(True):
         #print all items in the list
         print("print all vectors.........")
         for vector in vectorList:
-            print("Vector ID:{} X:{} Y:{}\t type:{}".format(vector.id,vector.x,vector.y,type(vector)))
+            i = "not Vector"
+            if(isinstance(vector,Vector)):
+                    i = "Vector"
+            print("Vector ID:{} X:{} Y:{} type:{}".format(vector.id,vector.x,vector.y,i))
 
 
     else:
