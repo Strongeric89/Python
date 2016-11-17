@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64255e3b-3801-47b1-926a-3b2689e4478b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/week10/Shapes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/week10/Person.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -27,21 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Vector.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week9/Vector.py">
+      <file leaf-file-name="Person.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week10/Person.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Shapes.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/week10/Shapes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+            <state relative-caret-position="561">
+              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -62,7 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PersonClass/__init__.py" />
         <option value="$PROJECT_DIR$/Week1/HelloWorld.py" />
         <option value="$PROJECT_DIR$/week2Testing/Converter.py" />
         <option value="$PROJECT_DIR$/GuessingGame/GuessingGame.py" />
@@ -113,6 +102,7 @@
         <option value="$PROJECT_DIR$/week8/Gettysberg/Getysb.py" />
         <option value="$PROJECT_DIR$/week9/Vector.py" />
         <option value="$PROJECT_DIR$/week10/Shapes.py" />
+        <option value="$PROJECT_DIR$/week10/Person.py" />
       </list>
     </option>
   </component>
@@ -168,7 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,6 +207,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,24 +228,7 @@
       <recent name="C:\Users\Eric\Documents\GitHub\Python\PycharmProjects" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Shapes">
-    <configuration default="false" name="labTest1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LabTest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LabTest/labTest1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Person">
     <configuration default="false" name="c15708709" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -320,6 +293,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week10/Shapes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Person" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week10" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week10/Person.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -459,19 +449,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.labTest1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.c15708709" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Getysb" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Vector" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Shapes" />
+      <item index="0" class="java.lang.String" itemvalue="Python.c15708709" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Getysb" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Vector" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Shapes" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Person" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Shapes" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Vector" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Getysb" />
-        <item index="3" class="java.lang.String" itemvalue="Python.c15708709" />
-        <item index="4" class="java.lang.String" itemvalue="Python.labTest1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Person" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Shapes" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Vector" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Getysb" />
+        <item index="4" class="java.lang.String" itemvalue="Python.c15708709" />
       </list>
     </recent_temporary>
   </component>
@@ -675,12 +665,19 @@
       <option name="project" value="LOCAL" />
       <updated>1479117046111</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="week10: classes - shapes">
+      <created>1479320189467</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1479320189467</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14757709" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -753,20 +750,14 @@
     <MESSAGE value="week 7: LabQuiz 1- the library book system" />
     <MESSAGE value="week8: review week problem, file io dictionaries, lists, HTML span tag" />
     <MESSAGE value="week9: overloading lab" />
-    <option name="LAST_COMMIT_MESSAGE" value="week9: overloading lab" />
+    <MESSAGE value="week10: classes - shapes" />
+    <option name="LAST_COMMIT_MESSAGE" value="week10: classes - shapes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/week3/eric.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week3/week3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1051,7 +1042,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week9/Vector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="1547">
           <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding />
         </state>
@@ -1059,8 +1050,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week10/Shapes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        <state relative-caret-position="34">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/Person.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding />
         </state>
       </provider>
