@@ -39,9 +39,13 @@ class Student(Person):
 #main
 
 cian = Person(2,2,"cian")
+eric = Student("c15708709","ERic Strong")
 print(cian)
 cian.run()
 print(cian.health)
 cian.sleep()
 print(cian.health)
 print(type(cian))
+print(eric)
+print(type(eric))
+print(type(Person))
