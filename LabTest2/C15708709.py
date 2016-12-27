@@ -90,7 +90,7 @@ while(True):
             option = int(raw_input("[1]Addition\n[2]Subtraction\n[3]Multiplication\n[4]Complex and an Integer\n[5]Quit\n[6]Complex X Int\nUSER:"))
             break
         except ValueError:
-            print("numbers [1-5] only")
+            print("numbers [1-6] only")
     if(option == 1):
         #add two complex numbers
 
@@ -162,7 +162,3 @@ while(True):
     else:
         print("Not a valid Option")
 print("End of program...")
-
-
-
-

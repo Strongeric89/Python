@@ -23,7 +23,7 @@ def binSearch(list):
     #bin Search algorithm
     low = 0
     high = len(list) - 1
-    mid = (low + high) / 2
+    mid = (low + high) // 2
 
     while(low <= high):
         if list[mid] < key:
@@ -34,16 +34,13 @@ def binSearch(list):
         else:
             high = mid - 1
 
-        high = (low + high) / 2
+        high = (low + high) // 2
 
     if (low > high ):
         print("key not in the list")
         return 0
 
     # print("the number of steps taken : %d" % steps)
-
-
-
 
 
 #main
